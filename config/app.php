@@ -229,4 +229,13 @@ return [
 
     ],
 
+    // 'providers' => [
+    //     /*
+    //     * Package Service Providers...
+    //     */
+    //     RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+    // ],
+    
+    // 'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+
 ];
