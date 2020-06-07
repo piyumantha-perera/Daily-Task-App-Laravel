@@ -36,11 +36,14 @@
                         <th>ID</th>
                         <th>TASK</th>
                         <th>COMPLETED</th>
-                        <tr></tr>
-                        <td>1</td>
-                        <td>Laravel</td>
-                        <td>not yet</td>
+
+                        @foreach($tasks as $task)
+                        <tr>
+                            <td>{{$task->id}}</td>
+                            <td>{{$task->task}}</td>
+                            <td>{{$task->iscompleted}}</td>
                         </tr>
+                        @endforeach
 
                     </table>
                 </div>
@@ -56,7 +59,6 @@
             var data = $('.taskadd').val();
 
             Swal.fire({
-
                 icon: 'success',
                 type: 'success',
                 title: 'Your work has been saved',

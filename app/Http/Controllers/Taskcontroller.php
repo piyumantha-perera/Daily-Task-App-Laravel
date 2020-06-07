@@ -14,6 +14,11 @@ class Taskcontroller extends Controller
 
     $task->task=$request->taskadd;
     $task->save();
+
+    $data=Task::all();
+
+    return view('tasks')->with('tasks',$data);
+
     return redirect()->back();
 
     }
